@@ -92,6 +92,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 img {
@@ -152,6 +153,10 @@ img {
   font-weight: var(--font-medium);
   font-size: var(--h3-font-size);
   cursor: pointer;
+  transition: var(--transitions);
+}
+
+.header__logo {
   transition: var(--transitions);
 }
 
@@ -363,4 +368,125 @@ img {
 .about__buttons {
   display: flex;
   justify-content: center;
+}
+
+.skills__container {
+  row-gap: 0;
+}
+
+.skills__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+
+.skills__icon, 
+.skills__arrow {
+  font-size: calc(var(--pad-base) * 2);
+  color: var(--primary-color);
+}
+
+.skills__icon {
+  margin-right: var(--mb-0-75);
+}
+
+.skills__title {
+  font-size: var(--h3-font-size);
+}
+
+.skills__subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-light-color);
+}
+
+.skills__arrow {
+  margin-left: auto;
+  transition: var(--transitions);
+}
+
+.skills__list {
+  row-gap: calc(var(--pad-base) * 1.5);
+  padding-left: calc(var(--pad-base) * 2.7);
+}
+
+.skills__titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
+}
+
+.skills__name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.skills__bar,
+.skills__percentage {
+  height: calc(var(--pad-base) * 0.3);
+  border-radius: calc(var(--pad-base) * 0.25);
+}
+
+.skills__bar {
+  background-color: var(--primary-lighter-color);
+}
+
+.skills__percentage {
+  display: block;
+  background-color: var(--primary-color);
+}
+
+.skills__html {
+  width: 90%;
+}
+
+.skills__css {
+  width: 80%;
+}
+
+.skills__js {
+  width: 70%;
+}
+
+.skills__react {
+  width: 90%;
+}
+
+.skills__php {
+  width: 80%;
+}
+
+.skills__firebase {
+  width: 70%;
+}
+
+.skills__python {
+  width: 50%;
+}
+
+.skills__figma {
+  width: 80%;
+}
+
+.skills__sketch {
+  width: 90%;
+}
+
+.skills__photoshop {
+  width: 70%;
+}
+
+.skills__open .skills__list {
+  height: max-content;
+  margin-bottom: var(--mb-2-5);
+}
+
+.skills__open .skills__arrow {
+  transform: rotate(-180deg);
+}
+
+
+.skills__close .skills__list {
+  height: 0;
+  overflow: hidden;
 }
